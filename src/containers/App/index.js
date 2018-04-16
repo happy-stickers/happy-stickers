@@ -1,32 +1,40 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
-import ReactFitText from 'react-fittext';
-import styles from './style.css';
 
-const colors = ['Tomato', 'DodgerBlue', 'HotPink', 'MediumSeaGreen', 'SlateBlue', 'Violet', 'Gold', 'Coral', 'Aqua', 'Crimson', 'Wheat', 'Fuchsia']
-const height = 30;
+import Header from '../../components/Header';
+
+import Shop from '../../pages/Shop';
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+
+import styles from './style.css';
 
 class App extends React.Component {
   render () {
-    var shadows = [];
-    var c = 0;
-    for(var i = 1; i < height*2; i++) {
-      shadows.push(`${(i)*10}px ${(i)*10}px 0px ${colors[i % colors.length]}`);
-    }
-    console.log(shadows);
     return (
-      <div className={styles.this}>
-        <div style={{'textShadow': shadows.join(', ')}}>
-          <ReactFitText compressor={0.5}>
-            <h1>Happy Stickers</h1>
-          </ReactFitText>
+      <Router>
+        <div className={styles.this}>
+          <Header />
+          <div className={styles.content}>
+            <Route exact path="/" component={Shop} />
+          </div>
         </div>
-        <ReactFitText compressor={3}>
-          <h2>Coming soon innit</h2>
-        </ReactFitText>
-      </div>
+      </Router>
     )
   }
 }
 
 export default hot(module)(App)
+
+{/* <Rainbowed height={3}>
+<ReactFitText compressor={0.5}>
+  <h1>Happy Stickers</h1>
+</ReactFitText>
+</Rainbowed>
+<ReactFitText compressor={3}>
+<h2>Coming soon innit</h2>
+</ReactFitText> */}

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Displays all the shadows 1`] = `
+<div
+  style={
+    Object {
+      "textShadow": "10px 10px 0px DodgerBlue, 20px 20px 0px HotPink, 30px 30px 0px MediumSeaGreen, 40px 40px 0px SlateBlue, 50px 50px 0px Violet, 60px 60px 0px Gold, 70px 70px 0px Coral, 80px 80px 0px Aqua, 90px 90px 0px Crimson, 100px 100px 0px Wheat, 110px 110px 0px Fuchsia, 120px 120px 0px Tomato, 130px 130px 0px DodgerBlue, 140px 140px 0px HotPink, 150px 150px 0px MediumSeaGreen, 160px 160px 0px SlateBlue, 170px 170px 0px Violet, 180px 180px 0px Gold, 190px 190px 0px Coral, 200px 200px 0px Aqua, 210px 210px 0px Crimson, 220px 220px 0px Wheat, 230px 230px 0px Fuchsia, 240px 240px 0px Tomato, 250px 250px 0px DodgerBlue, 260px 260px 0px HotPink, 270px 270px 0px MediumSeaGreen, 280px 280px 0px SlateBlue, 290px 290px 0px Violet, 300px 300px 0px Gold",
+    }
+  }
+>
+  Hello World
+</div>
+`;
+
+exports[`Displays one shadow 1`] = `
+<div
+  style={
+    Object {
+      "textShadow": "10px 10px 0px DodgerBlue",
+    }
+  }
+>
+  Hello World
+</div>
+`;
