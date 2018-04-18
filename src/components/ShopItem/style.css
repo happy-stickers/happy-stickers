@@ -1,0 +1,15 @@
+.this {
+  width: 25%;
+  display: flex;
+}
+
+.inner {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  img {
+    max-width: 100%;
+  }
+}

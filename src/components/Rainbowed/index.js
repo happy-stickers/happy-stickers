@@ -1,6 +1,6 @@
 import React from 'react';
 
-const colors = ['Tomato', 'DodgerBlue', 'HotPink', 'MediumSeaGreen', 'SlateBlue', 'Violet', 'Gold', 'Coral', 'Aqua', 'Crimson', 'Wheat', 'Fuchsia']
+const colors = ['DodgerBlue', 'Tomato', 'HotPink', 'MediumSeaGreen', 'SlateBlue', 'Violet', 'Gold', 'Coral', 'Aqua', 'Crimson', 'Wheat', 'Fuchsia']
 
 const Rainbowed = ({children, offset=10, height=30, style={}, ...props}) => {
   var shadows = [];

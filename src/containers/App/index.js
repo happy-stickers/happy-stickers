@@ -2,6 +2,8 @@ import React from 'react';
 import { hot } from 'react-hot-loader';
 
 import Header from '../../components/Header';
+import Full from '../../components/Full';
+import HugeTitle from '../../components/HugeTitle';
 
 import Shop from '../../pages/Shop';
 
@@ -18,6 +20,9 @@ class App extends React.Component {
     return (
       <Router>
         <div className={styles.this}>
+          <Full>
+            <HugeTitle />
+          </Full>
           <Header />
           <div className={styles.content}>
             <Route exact path="/" component={Shop} />
@@ -28,13 +33,4 @@ class App extends React.Component {
   }
 }
 
-export default hot(module)(App)
-
-{/* <Rainbowed height={3}>
-<ReactFitText compressor={0.5}>
-  <h1>Happy Stickers</h1>
-</ReactFitText>
-</Rainbowed>
-<ReactFitText compressor={3}>
-<h2>Coming soon innit</h2>
-</ReactFitText> */}
+export default hot(module)(App);
