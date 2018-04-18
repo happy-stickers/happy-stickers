@@ -21,7 +21,7 @@ export default class Holding extends React.Component{
           </ReactFitText>
         </div>
         <ReactFitText compressor={3}>
-          <h2>Coming soon innit</h2>
+          <h2>Coming soon innit.</h2>
         </ReactFitText>
       </div>
     )
